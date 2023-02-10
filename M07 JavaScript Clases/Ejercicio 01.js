@@ -39,10 +39,7 @@ function agregarStringInvertida() {
    // El método debe llamarse "reverse".
    // [PISTA]: necesitarás utilizar el objeto "this".
    String.prototype.reverse = function () {
-      arr = this.split("")
-      arr.reverse()
-      arrFinal = arr.join("")
-      return arrFinal
+      return this.split("").reverse().join("")
    }
 }
 

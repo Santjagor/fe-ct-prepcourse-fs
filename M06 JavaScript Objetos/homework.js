@@ -138,10 +138,8 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    // PorcentajeDeDescuento ---> 0.2
    // Precio final ---> 8
    // Tu código:
-
    objetoProducto.calcularPrecioDescuento = function () {
-      var precioFinal = objetoProducto.precio * objetoProducto.porcentajeDeDescuento
-      objetoProducto.precioFinal = objetoProducto.precio - precioFinal
+      objetoProducto.precioFinal = objetoProducto.precio - (objetoProducto.precio * objetoProducto.porcentajeDeDescuento) 
       return objetoProducto.precioFinal
    }
    return objetoProducto
